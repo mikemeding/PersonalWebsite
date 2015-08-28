@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mike Meding</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-yeti.css"/>
+    <!--JS-->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+
+    <script src="app.js"></script>
+</head>
+<body ng-app="mainSite">
+<div class="container" ng-controller="MainSiteController">
+    <h3>Posts</h3>
+    <ul>
+        <li ng-repeat="item in stuff">{{item.title}}</li>
+    </ul>
+
+    <form>
+        <label for="newItem">Add Another Item</label>
+        <input type="text" id="newItem" ng-model="title"/>
+        <button class="btn btn-default" ng-click="addNewPost(title)">Submit</button>
+    </form>
+</div>
+</body>
+</html>
