@@ -21,19 +21,32 @@ console.log("Database connected at: " + databaseUrl);
 var Post = mongoose.model("Post", {title: String});
 
 // REST CALLS
-app.get("/", function (req, res) {
+app.get("/post", function (req, res) {
     Post.find(function (error, products) {
         res.send(products);
     });
 });
-app.post("/addPost", function (req, res) {
+app.post("/post", function (req, res) {
     var title = req.body.title;
     var post = new Post({title: title});
     post.save(function (err) {
         //console.error(err);
         res.send(); // respond with nothing
     });
+});
 
+app.delete("/post", function (req, res) {
+    var str = "{_id :" + "ObjectId(" + "\"" + req.body + "\"" + ")" + "}";
+    console.log(str);
+    Post.remove(str, function (err) {
+            if (err) {
+                console.error(err);
+                res.send(err);
+            } else {
+                console.log("Deleted successfully");
+            }
+        }
+    );
 });
 
 //Fire up node server
