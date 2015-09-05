@@ -24,7 +24,7 @@
             $scope.title = "";
             var request = {
                 method: 'GET',
-                url: 'http://localhost:3000/'
+                url: 'http://localhost:3000/getAllPosts'
             };
             $http(request)
                 .success(function (data) { // If call successful
@@ -53,7 +53,47 @@
                 .error(function () { // If call fails
                     console.error("failed to add new item");
                 });
-        }
+        };
+
+        $scope.removePost = function (post) {
+            //console.log(post);
+            var request = {
+                method: 'POST',
+                url: 'http://localhost:3000/removePost',
+                data: {
+                    post: post
+                }
+            };
+            $http(request)
+                .success(function (data) { // If call successful
+                    console.log("removed data");
+                    getPosts();
+                })
+                .error(function () { // If call fails
+                    console.error("failed to remove item");
+                });
+        };
+
+        /**
+         * get the file list of the photos directory
+         */
+        $scope.fileList = [];
+        $scope.getAllPhotos = function () {
+            var request = {
+                method: 'GET',
+                url: 'http://localhost:3000/getListOfPhotos/'
+            };
+
+            $http(request)
+                .success(function (data) { // If call successful
+                    console.log(data);
+                    $scope.fileList = data;
+
+                })
+                .error(function () { // If call fails
+                    console.error("unable to get file list");
+                });
+        };
 
     }
 
