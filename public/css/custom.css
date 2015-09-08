@@ -1,0 +1,11 @@
+.nav, .pagination, .carousel, .panel-title a {
+    cursor: pointer;
+}
+
+h1 strong {
+    font-size: 18px;
+}
+
+.index-nav {
+    margin-top: 20px;
+}

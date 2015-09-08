@@ -79,12 +79,7 @@ app.post("/removePost", function (req, res) {
 
 // IMAGE STORAGE
 app.post("/uploadPhoto", function (req, res) {
-    //if (done == true) {
-    //    console.log(req.files);
-    //    res.end("File uploaded.");
-    //}
-    //res.send("File uploading");
-    //res.end();
+        //res.end();
 });
 
 // get file list
