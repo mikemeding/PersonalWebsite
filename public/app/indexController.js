@@ -8,6 +8,10 @@ app.controller('MainSiteController', ["$http", "$scope", "Lightbox", MainSiteCon
 
 function MainSiteController($http, $scope, Lightbox) {
 
+    $(function () {
+        angular.element('[data-toggle="tooltip"]').tooltip();
+    });
+
     $scope.title = "";
     $scope.stuff = [];
 

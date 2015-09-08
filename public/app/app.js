@@ -26,6 +26,11 @@
                 templateUrl: "home/homeView.html",
                 //controller: "HomeCtrl as vm"
             })
+            .state("resume", {
+                url: "/resume",
+                templateUrl: "resume/resumeView.html",
+                //controller: "HomeCtrl as vm"
+            })
             .state("about", {
                 url: "/about",
                 templateUrl: "about/aboutView.html",

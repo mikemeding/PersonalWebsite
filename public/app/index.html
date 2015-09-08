@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Mike Meding</title>
     <!--CSS-->
-    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap-yeti.css"/>
+
+    <link rel="stylesheet" href="http://bootswatch.com/flatly/bootstrap.css"/>
     <link rel="stylesheet" href="../css/custom.css"/>
     <link rel="stylesheet" href="../bower_components/angular-bootstrap-lightbox/dist/angular-bootstrap-lightbox.css"/>
     <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.css"/>
+
 
     <!--JS-->
     <script src="../bower_components/jquery/dist/jquery.js"></script>
@@ -25,23 +27,30 @@
 </head>
 <body ng-app="mainSite">
 
-
-<div class="container" ng-controller="MainSiteController">
-    <div class="row">
+<div class="row" id="navbar-background">
+    <div class="row col-lg-8 col-lg-offset-2">
         <div class="col-lg-6">
             <h1>Michael Meding <br> <strong>Software Developer + Engineer</strong></h1>
         </div>
         <div class="col-lg-6">
             <nav class="index-nav">
                 <ul class="nav nav-pills">
-                    <li role="presentation" ui-sref="home"><i class="fa fa-home fa-5x"></i></li>
-                    <li role="presentation" ui-sref="about"><i class="fa fa-user fa-5x"></i></li>
+                    <li role="presentation" ui-sref="home" data-toggle="tooltip" data-placement="bottom"
+                        title="Home Page"><a class="fa fa-home fa-5x fa-inverse"></a></li>
+                    <li role="presentation" ui-sref="resume" data-toggle="tooltip" data-placement="bottom"
+                        title="Interactive Resume"><a class="fa fa-edit fa-5x fa-inverse"></a></li>
+                    <li role="presentation" ui-sref="about" data-toggle="tooltip" data-placement="bottom"
+                        title="About Me"><a class="fa fa-user fa-5x fa-inverse"></a></li>
                 </ul>
             </nav>
         </div>
     </div>
+</div>
 
+<div class="container" ng-controller="MainSiteController">
     <div class="col-lg-8 col-lg-offset-2">
+
+
         <div ui-view></div>
     </div>
 
