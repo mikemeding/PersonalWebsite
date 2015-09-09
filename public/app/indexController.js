@@ -70,7 +70,7 @@ function MainSiteController($http, $scope, Lightbox) {
     };
 
     /**
-     * get the file list of the photos directory
+     * get the file list of the img directory
      */
     $scope.fileList = [];
     $scope.getAllPhotos = function () {
@@ -84,7 +84,7 @@ function MainSiteController($http, $scope, Lightbox) {
 
                 // push each image into a specific format for lightbox
                 angular.forEach(data, function (value, key) {
-                    var url = "../photos/" + value;
+                    var url = "../img/" + value;
                     $scope.fileList.push({"url": url});
                 });
                 console.log($scope.fileList);

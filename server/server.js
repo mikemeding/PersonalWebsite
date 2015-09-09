@@ -18,7 +18,7 @@ app.use(body());
 var done = false;
 
 app.use(multer({
-    dest: 'public/photos/',
+    dest: 'public/img/',
     rename: function (fieldname, filename) {
         console.log(filename);
         return filename + Date.now();
@@ -84,7 +84,7 @@ app.post("/uploadPhoto", function (req, res) {
 
 // get file list
 app.get("/getListOfPhotos", function (req, res) {
-    fs.readdir("public/photos", function (err, items) {
+    fs.readdir("public/img", function (err, items) {
         console.log(items);
         res.send(items);
     });

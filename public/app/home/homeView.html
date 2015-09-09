@@ -1,29 +1,31 @@
-<h3>Posts</h3>
-<ul ng-repeat="item in stuff">
-    <li>{{item._id}} , {{item.title}},&nbsp;
-        <button class="btn btn-danger" ng-click="removePost(item)">x</button>
-    </li>
-</ul>
+<div class="fadeIn animated">
+    <h3>Posts</h3>
+    <ul ng-repeat="item in stuff">
+        <li>{{item._id}} , {{item.title}},&nbsp;
+            <button class="btn btn-danger" ng-click="removePost(item)">x</button>
+        </li>
+    </ul>
 
-<form>
-    <label for="newItem">Add Another Item</label>
-    <input type="text" id="newItem" ng-model="title"/>
-    <button class="btn btn-default" ng-click="addNewPost(title)">Submit</button>
-</form>
+    <form>
+        <label for="newItem">Add Another Item</label>
+        <input type="text" id="newItem" ng-model="title"/>
+        <button class="btn btn-default" ng-click="addNewPost(title)">Submit</button>
+    </form>
 
-<form action="http://localhost:3000/uploadPhoto" method="POST" enctype="multipart/form-data">
-    Select an image to upload:
-    <input type="file" name="image">
-    <input type="submit" value="Upload Image">
-</form>
+    <form action="http://localhost:3000/uploadPhoto" method="POST" enctype="multipart/form-data">
+        Select an image to upload:
+        <input type="file" name="image">
+        <input type="submit" value="Upload Image">
+    </form>
 
-<button class="btn btn-default" ng-click="getAllPhotos()">get all photos</button>
-<a ng-href="photos/{{photo}}" ng-repeat="photo in fileList" data-lightbox="posts"></a>
-<img src="photos/67c1ae2cb612c8b81057ced6dcedef29" data-lightbox="posts">
-<ul class="gallery gallery1">
-    <li ng-repeat="image in fileList">
-        <a ng-click="openLightbox($index)">
-            <img ng-src="{{image.url}}" class="img-responsive">
-        </a>
-    </li>
-</ul>
+    <button class="btn btn-default" ng-click="getAllPhotos()">get all photos</button>
+    <a ng-href="photos/{{photo}}" ng-repeat="photo in fileList" data-lightbox="posts"></a>
+    <img src="photos/67c1ae2cb612c8b81057ced6dcedef29" data-lightbox="posts">
+    <ul class="gallery gallery1">
+        <li ng-repeat="image in fileList">
+            <a ng-click="openLightbox($index)">
+                <img ng-src="{{image.url}}" class="img-responsive">
+            </a>
+        </li>
+    </ul>
+</div>

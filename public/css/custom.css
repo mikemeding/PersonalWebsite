@@ -8,6 +8,11 @@ h1 {
 }
 
 h2 {
+    font-size: 36px;
+    color: #00bd9d;
+}
+
+h3 {
     font-size: 28px;
     color: #00bd9d;
 }
@@ -26,6 +31,5 @@ h1 strong {
 }
 
 #navbar-background {
-    /*Sky Blue*/
     background-color: #00bd9d;
 }

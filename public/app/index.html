@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Mike Meding</title>
     <!--CSS-->
-
+    <!--bootstrap is brought in twice in case of cdn failure-->
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css"/>
     <link rel="stylesheet" href="http://bootswatch.com/flatly/bootstrap.css"/>
     <link rel="stylesheet" href="../css/custom.css"/>
     <link rel="stylesheet" href="../bower_components/angular-bootstrap-lightbox/dist/angular-bootstrap-lightbox.css"/>
@@ -40,7 +41,7 @@
                     <li role="presentation" ui-sref="home" data-toggle="tooltip" data-placement="bottom"
                         title="Home Page"><a class="fa fa-home fa-4x fa-inverse"></a></li>
                     <li role="presentation" ui-sref="resume" data-toggle="tooltip" data-placement="bottom"
-                        title="Interactive Resume"><a class="fa fa-file-text fa-4x fa-inverse"></a></li>
+                        title="Interactive Résumé"><a class="fa fa-file-text fa-4x fa-inverse"></a></li>
                     <li role="presentation" ui-sref="about" data-toggle="tooltip" data-placement="bottom"
                         title="About"><a class="fa fa-user fa-4x fa-inverse"></a></li>
                     <li role="presentation" ui-sref="contact" data-toggle="tooltip" data-placement="bottom"
