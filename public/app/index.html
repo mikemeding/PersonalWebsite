@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../css/custom.css"/>
     <link rel="stylesheet" href="../bower_components/angular-bootstrap-lightbox/dist/angular-bootstrap-lightbox.css"/>
     <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.css"/>
+    <link rel="stylesheet" href="../css/animate/animate.css"/>
 
 
     <!--JS-->
@@ -24,23 +25,29 @@
     <!--MAIN ANGULAR SCRIPT-->
     <script src="app.js"></script>
     <script src="indexController.js"></script>
+    <script src="resume/resumeController.js"></script>
 </head>
 <body ng-app="mainSite">
 
 <div class="row" id="navbar-background">
     <div class="row col-lg-8 col-lg-offset-2">
-        <div class="col-lg-6">
+        <div class="col-lg-5">
             <h1>Michael Meding <br> <strong>Software Developer + Engineer</strong></h1>
         </div>
-        <div class="col-lg-6">
+        <div class="col-lg-7">
             <nav class="index-nav">
                 <ul class="nav nav-pills">
                     <li role="presentation" ui-sref="home" data-toggle="tooltip" data-placement="bottom"
-                        title="Home Page"><a class="fa fa-home fa-5x fa-inverse"></a></li>
+                        title="Home Page"><a class="fa fa-home fa-4x fa-inverse"></a></li>
                     <li role="presentation" ui-sref="resume" data-toggle="tooltip" data-placement="bottom"
-                        title="Interactive Resume"><a class="fa fa-edit fa-5x fa-inverse"></a></li>
+                        title="Interactive Resume"><a class="fa fa-file-text fa-4x fa-inverse"></a></li>
                     <li role="presentation" ui-sref="about" data-toggle="tooltip" data-placement="bottom"
-                        title="About Me"><a class="fa fa-user fa-5x fa-inverse"></a></li>
+                        title="About"><a class="fa fa-user fa-4x fa-inverse"></a></li>
+                    <li role="presentation" ui-sref="contact" data-toggle="tooltip" data-placement="bottom"
+                        title="Contact"><a class="fa fa-share-alt-square fa-4x fa-inverse"></a></li>
+                    <li role="presentation" data-toggle="tooltip" data-placement="bottom"
+                        title="Blog"><a class="fa fa-wordpress fa-4x fa-inverse"
+                                        href="https://mikemeding.wordpress.com/"></a></li>
                 </ul>
             </nav>
         </div>

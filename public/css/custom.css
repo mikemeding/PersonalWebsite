@@ -6,8 +6,10 @@ h1 {
     font-size: 42px;
     color: white;
 }
+
 h2 {
     font-size: 28px;
+    color: #00bd9d;
 }
 
 h1 strong {

@@ -29,15 +29,19 @@
             .state("resume", {
                 url: "/resume",
                 templateUrl: "resume/resumeView.html",
-                //controller: "HomeCtrl as vm"
+                controller: "ResumeController"
             })
             .state("about", {
                 url: "/about",
                 templateUrl: "about/aboutView.html",
                 //controller: "AboutCtrl as vm"
+            })
+            .state("contact", {
+                url: "/contact",
+                templateUrl: "contact/contactView.html",
+                //controller: "AboutCtrl as vm"
             });
     });
-
 
 
 })();
