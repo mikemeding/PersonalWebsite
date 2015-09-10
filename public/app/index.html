@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Mike Meding</title>
+
     <!--CSS-->
     <!--bootstrap is brought in twice in case of cdn failure-->
     <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css"/>
@@ -12,7 +13,6 @@
     <link rel="stylesheet" href="../bower_components/angular-bootstrap-lightbox/dist/angular-bootstrap-lightbox.css"/>
     <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.css"/>
     <link rel="stylesheet" href="../css/animate/animate.css"/>
-
 
     <!--JS-->
     <script src="../bower_components/jquery/dist/jquery.js"></script>
@@ -30,6 +30,7 @@
 </head>
 <body ng-app="mainSite">
 
+<!--Main Navigation -->
 <div class="row" id="navbar-background">
     <div class="row col-lg-8 col-lg-offset-2">
         <div class="col-lg-5">
@@ -56,14 +57,18 @@
 </div>
 
 <div class="container" ng-controller="MainSiteController">
+
     <div class="col-lg-8 col-lg-offset-2">
-
-
+        <!--ui view insertion point-->
         <div ui-view></div>
+
+        <!--Copyright Footer-->
+        <div class="footer">
+            <p class="text-center">© Michael U.B. Meding 2015</p>
+        </div>
+
     </div>
 
 </div>
-
-
 </body>
 </html>
