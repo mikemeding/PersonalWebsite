@@ -23,22 +23,22 @@
         $stateProvider
             .state("home", {
                 url: "/home",
-                templateUrl: "home/homeView.html",
+                templateUrl: "app/home/homeView.html"
                 //controller: "HomeCtrl as vm"
             })
             .state("resume", {
                 url: "/resume",
-                templateUrl: "resume/resumeView.html",
+                templateUrl: "app/resume/resumeView.html",
                 controller: "ResumeController"
             })
             .state("about", {
                 url: "/about",
-                templateUrl: "about/aboutView.html",
+                templateUrl: "app/about/aboutView.html"
                 //controller: "AboutCtrl as vm"
             })
             .state("contact", {
                 url: "/contact",
-                templateUrl: "contact/contactView.html",
+                templateUrl: "app/contact/contactView.html"
                 //controller: "AboutCtrl as vm"
             });
     });
