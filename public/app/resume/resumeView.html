@@ -1,6 +1,8 @@
 <div class="fadeIn animated">
 
-    <h2 class="text-center">Résumé</h2>
+    <h2 class="text-center" id="resume-title">Résumé</h2>
+
+    <!--add go-to top link-->
     <!--RESUME NAVIGATION-->
     <nav class="col-lg-offset-3">
         <ul class="nav nav-pills">
@@ -15,25 +17,26 @@
     <ul class="list-group">
         <li class="row list-group-item">
             <p class="col-lg-6"><strong>University of Massachusetts Lowell</strong></br>
-                Masters of Science in Computer Science</p>
+                Master of Science in Computer Science</p>
 
             <p class="col-lg-6 text-right">Expected - May 2016</p>
         </li>
         <li class="row list-group-item">
             <p class="col-lg-6"><strong>University of Massachusetts Lowell</strong></br>
-                Bachelors of Science in Computer Science</p>
+                Bachelor of Science in Computer Science</p>
 
             <p class="col-lg-6 text-right">Graduated with Honors - May 2015</p>
         </li>
         <li class="row list-group-item">
             <p class="col-lg-6"><strong>Massachusetts Bay Community College</strong></br>
-                Associates of Science in Computer Science</p>
+                Associate of Science in Computer Science</p>
 
             <p class="col-lg-6 text-right">Graduated - June 2013</p>
         </li>
     </ul>
 
     <!--EMPLOYMENT HISTORY-->
+    <button class="btn btn-default btn-sm" ng-click="scrollTo('resume-title')">TOP</button>
     <h3 id="employment">Employment</h3>
     <!--outsmart-->
     <div class="panel panel-default ">
@@ -55,9 +58,16 @@
                 </li>
                 <li>Designed and coded a front end content management system for maintaining data relating to
                     specific
-                    customer configurations. This included responsive web design elements for both mobile and
-                    desktop
-                    web applications using jQuery and Twitter Bootstrap
+                    customer configurations.
+                    <ul>
+                        <li>
+                            This included responsive web design elements for both mobile and
+                            desktop
+                        </li>
+                    </ul>
+                <li>
+                    Web applications using AngularJS and Twitter Bootstrap
+                </li>
                 </li>
                 <li>Responsible for the deployment of the above web application to respective app and web servers
                 </li>
@@ -66,25 +76,9 @@
             </ul>
         </div>
     </div>
-    <!--rack attack-->
-    <div class="panel panel-default ">
-        <div class="panel-heading">
-            <div class="row">
-                <p class="col-lg-6"><strong>Rack Attack Inc.</strong></br>
-                    Mechanic</br>
-                    Framingham, MA </p>
-
-                <p class="col-lg-6 text-right">May 2010 - June 2011</p>
-            </div>
-        </div>
-        <div class="panel-body">
-            <ul>
-                <li>Mechanic and store front clerk at a shop that sells and installs trailer hitches</li>
-            </ul>
-        </div>
-    </div>
 
     <!--RELEVANT WORK-->
+    <button class="btn btn-default btn-sm" ng-click="scrollTo('resume-title')">TOP</button>
     <h3 id="relevantWork">Relevant Work</h3>
     <ul class="list-group">
         <li class="row list-group-item">
@@ -93,7 +87,7 @@
                 to discover bullies who use social media
                 Arduino ODB2 Protocol Tool </p>
 
-            <p class="col-lg-3 text-right">Sept 2014 - May 2015</p>
+            <p class="col-lg-3 text-right">September 2014 - May 2015</p>
         </li>
     </ul>
     <ul class="list-group">
@@ -102,18 +96,19 @@
                 A K-line protocol engine diagnostic and logging tool which I have been developing in my spare time
                 using an Arduino and an ECU simulator </p>
 
-            <p class="col-lg-3 text-right">Sept 2013 - In Progress</p>
+            <p class="col-lg-3 text-right">September 2013 - In Progress</p>
         </li>
     </ul>
 
     <!--TECHNICAL STRENGTHS-->
+    <button class="btn btn-default btn-sm" ng-click="scrollTo('resume-title')">TOP</button>
     <h3 id="techStrengths">Technical Strengths</h3>
     <table class="table">
         <tbody>
         <tr>
             <th>Computer Languages</th>
             <td> Java 7 & 8, Java EE 7, JavaScript, C, C++, Scheme,
-                Linux Bash, Assembly, Python 2 & 3, Misc. Firmware C code, LATEX
+                Linux Bash, Assembly, Python 2 & 3, Miscellaneous Firmware C code, Latex
             </td>
         </tr>
         <tr>
@@ -125,8 +120,12 @@
             <td> MySQL, Derby, Neo4j, MongoDB</td>
         </tr>
         <tr>
-            <th>Protocols & Misc</th>
-            <td> XML, JSON, BSON, EJB3, JMS, jUnit 3 & 4, ActiveMQ, Wildfly 7 & 8</td>
+            <th>Protocols</th>
+            <td> XML, JSON, BSON, EJB3, JMS, jUnit 3 & 4</td>
+        </tr>
+        <tr>
+            <th>Servers</th>
+            <td>ActiveMQ, Wildfly 7 & 8, XAMPP, Apache</td>
         </tr>
         <tr>
             <th>Tools</th>
@@ -134,7 +133,7 @@
         </tr>
         <tr>
             <th>Platforms</th>
-            <td>Ubuntu (Since Ver 7.04), LinuxMint, CentOS (Since Ver 5.8), Fedora,
+            <td>Ubuntu (since Ver. 7.04), LinuxMint, CentOS (since Ver. 5.8), Fedora,
                 Mac OSX , and Windows
             </td>
         </tr>
