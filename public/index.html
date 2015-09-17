@@ -8,7 +8,8 @@
     <!--CSS-->
     <!--bootstrap is brought in twice in case of cdn failure-->
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css"/>
-    <link rel="stylesheet" href="http://bootswatch.com/flatly/bootstrap.css"/>
+    <!--<link rel="stylesheet" href="http://bootswatch.com/flatly/bootstrap.css"/>-->
+    <link rel="stylesheet" href="css/bootstrap.css"/>
     <link rel="stylesheet" href="css/custom.css"/>
     <link rel="stylesheet" href="bower_components/angular-bootstrap-lightbox/dist/angular-bootstrap-lightbox.css"/>
     <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css"/>
@@ -37,20 +38,59 @@
             <h1>Michael Meding <br> <strong>Software Developer + Engineer</strong></h1>
         </div>
         <div class="col-lg-7">
-            <nav class="index-nav">
-                <ul class="nav nav-pills">
-                    <li role="presentation" ui-sref="home" data-toggle="tooltip" data-placement="bottom"
-                        title="Home Page"><a class="fa fa-home fa-4x fa-inverse"></a></li>
-                    <li role="presentation" ui-sref="resume" data-toggle="tooltip" data-placement="bottom"
-                        title="Interactive Résumé"><a class="fa fa-file-text fa-4x fa-inverse"></a></li>
-                    <li role="presentation" ui-sref="about" data-toggle="tooltip" data-placement="bottom"
-                        title="About"><a class="fa fa-user fa-4x fa-inverse"></a></li>
-                    <li role="presentation" ui-sref="contact" data-toggle="tooltip" data-placement="bottom"
-                        title="Contact"><a class="fa fa-share-alt-square fa-4x fa-inverse"></a></li>
-                    <li role="presentation" data-toggle="tooltip" data-placement="bottom"
-                        title="Blog"><a class="fa fa-wordpress fa-4x fa-inverse"
-                                        href="https://mikemeding.wordpress.com/"></a></li>
-                </ul>
+            <!--<nav class="index-nav">-->
+                <!--<ul class="nav nav-pills">-->
+
+                    <!--<li role="presentation" ui-sref="home" data-toggle="tooltip" data-placement="bottom"-->
+                        <!--title="Home Page"><a class="fa fa-home fa-4x fa-inverse"></a></li>-->
+                    <!--<li role="presentation" ui-sref="resume" data-toggle="tooltip" data-placement="bottom"-->
+                        <!--title="Interactive Résumé"><a class="fa fa-file-text fa-4x fa-inverse"></a></li>-->
+                    <!--<li role="presentation" ui-sref="about" data-toggle="tooltip" data-placement="bottom"-->
+                        <!--title="About"><a class="fa fa-user fa-4x fa-inverse"></a></li>-->
+                    <!--<li role="presentation" ui-sref="contact" data-toggle="tooltip" data-placement="bottom"-->
+                        <!--title="Contact"><a class="fa fa-share-alt-square fa-4x fa-inverse"></a></li>-->
+                    <!--<li role="presentation" data-toggle="tooltip" data-placement="bottom"-->
+                        <!--title="Blog"><a class="fa fa-wordpress fa-4x fa-inverse"-->
+                                        <!--href="https://mikemeding.wordpress.com/"></a></li>-->
+                <!--</ul>-->
+            <!--</nav>-->
+
+            <nav class="navbar navbar-default navbar-inverse">
+                <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                                data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <!--<a class="navbar-brand" href="#">Brand</a>-->
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+
+                        <ul class="nav navbar-nav">
+
+                            <li role="presentation" ui-sref="home" data-toggle="tooltip" data-placement="bottom"
+                                title="Home Page"><a class="fa fa-home fa-4x fa-inverse"></a></li>
+                            <li role="presentation" ui-sref="resume" data-toggle="tooltip" data-placement="bottom"
+                                title="Résumé"><a class="fa fa-file-text fa-4x fa-inverse"></a></li>
+                            <li role="presentation" ui-sref="about" data-toggle="tooltip" data-placement="bottom"
+                                title="About"><a class="fa fa-user fa-4x fa-inverse"></a></li>
+                            <li role="presentation" ui-sref="contact" data-toggle="tooltip" data-placement="bottom"
+                                title="Contact"><a class="fa fa-share-alt-square fa-4x fa-inverse"></a></li>
+                            <li role="presentation" data-toggle="tooltip" data-placement="bottom"
+                                title="Blog"><a class="fa fa-wordpress fa-4x fa-inverse"
+                                                href="https://mikemeding.wordpress.com/"></a></li>
+                        </ul>
+                    </div>
+                    <!-- /.navbar-collapse -->
+                </div>
+                <!-- /.container-fluid -->
             </nav>
         </div>
     </div>
