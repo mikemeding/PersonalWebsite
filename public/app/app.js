@@ -36,12 +36,6 @@
                 templateUrl: "app/about/aboutView.html"
                 //controller: "AboutCtrl as vm"
             })
-            .state("hw2", {
-                absolute: true,
-                url: "/webSystems",
-                templateUrl: "app/webSystems/webSystemsIndex.html"
-                //controller: "AboutCtrl as vm"
-            })
             .state("contact", {
                 url: "/contact",
                 templateUrl: "app/contact/contactView.html"
