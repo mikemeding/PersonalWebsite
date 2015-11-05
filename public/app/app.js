@@ -40,6 +40,11 @@
                 url: "/contact",
                 templateUrl: "app/contact/contactView.html"
                 //controller: "AboutCtrl as vm"
+            })
+            .state("cam", {
+                url: "/cam",
+                templateUrl: "app/cam/camView.html"
+                //controller: "AboutCtrl as vm"
             });
     });
 
