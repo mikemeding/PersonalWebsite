@@ -7063,3 +7063,9 @@ a.list-group-item-danger.active:focus {
 .popover {
   color: #2c3e50;
 }
+
+
+.carousel-inner{
+  width:100%;
+  max-height: 400px !important;
+}
