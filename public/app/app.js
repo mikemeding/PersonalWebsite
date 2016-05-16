@@ -23,8 +23,8 @@
         $stateProvider
             .state("home", {
                 url: "/home",
-                templateUrl: "app/home/homeView.html"
-                //controller: "HomeCtrl as vm"
+                templateUrl: "app/home/homeView.html",
+                controller: "HomeController"
             })
             .state("resume", {
                 url: "/resume",
@@ -46,6 +46,11 @@
                 templateUrl: "app/cam/camView.html"
                 //controller: "AboutCtrl as vm"
             });
+    });
+
+    app.run(function ($rootScope) {
+        $rootScope.baseUrl = "http://localhost:8000/";
+        //$rootScope.baseUrl = "http://www.mikemeding.com/API/";
     });
 
 

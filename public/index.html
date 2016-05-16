@@ -28,67 +28,99 @@
     <script src="app/app.js"></script>
     <script src="app/indexController.js"></script>
     <script src="app/resume/resumeController.js"></script>
+    <script src="app/home/homeController.js"></script>
 </head>
 <body ng-app="mainSite">
+<div class="container">
 
-<!--Main Navigation -->
-<div class="row" id="navbar-background">
-    <div class="row col-lg-10 col-lg-offset-1">
-        <div class="col-lg-4">
-            <h1>Michael Meding <br> <strong>Software Developer + Engineer</strong></h1>
-        </div>
-        <div class="col-lg-8">
+    <!--Main Navigation -->
+    <div class="row" id="navbar-background">
+        <div class="row col-lg-10 col-lg-offset-1">
+            <div class="col-lg-4 col-md-4 col-sm-4">
+                <h1>Michael Meding <br> <strong>Software Developer + Engineer</strong></h1>
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-8">
 
-            <nav class="navbar navbar-default navbar-inverse">
-                <div class="container-fluid">
-                    <!-- Brand and toggle get grouped for better mobile display -->
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                                data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <!--<a class="navbar-brand" href="#">Brand</a>-->
+                <nav class="navbar navbar-default navbar-inverse">
+                    <div class="container">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                <!--<span class="fa fa-arrow-down fa-inverse"></span>-->
+                                <!--<span class="fa fa-inverse">menu</span>-->
+                                menu
+                            </button>
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav">
+
+                                <!--HOME-->
+                                <!--large-->
+                                <li class="hidden-xs" role="presentation" ui-sref="home" data-toggle="tooltip"
+                                    data-placement="bottom"
+                                    title="Home Page"><a class="fa fa-home fa-2x fa-inverse"></a></li>
+                                <!--phone-->
+                                <li class="visible-xs-block" role="presentation" ui-sref="home"><a
+                                        class="fa fa-home fa-inverse">&nbsp;&nbsp;Home</a></li>
+
+                                <!--RESUME-->
+                                <li class="hidden-xs" role="presentation" ui-sref="resume" data-toggle="tooltip"
+                                    data-placement="bottom"
+                                    title="Résumé"><a class="fa fa-file-text fa-2x fa-inverse"></a></li>
+                                <li class="visible-xs-block" role="presentation" ui-sref="resume"><a
+                                        class="fa fa-file-text fa-inverse">&nbsp;&nbsp;Resume</a></li>
+
+                                <!--ABOUT-->
+                                <li class="hidden-xs" role="presentation" ui-sref="about" data-toggle="tooltip" data-placement="bottom"
+                                    title="About"><a class="fa fa-user fa-2x fa-inverse"></a></li>
+                                <li class="visible-xs-block" role="presentation" ui-sref="about"><a
+                                        class="fa fa-user fa-inverse">&nbsp;&nbsp;About</a></li>
+
+                                <!--CONTACT-->
+                                <li class="hidden-xs" role="presentation" ui-sref="contact" data-toggle="tooltip" data-placement="bottom"
+                                    title="Contact"><a class="fa fa-share-alt-square fa-2x fa-inverse"></a></li>
+                                <li class="visible-xs-block" role="presentation" ui-sref="contact"><a
+                                        class="fa fa-share-alt-square fa-inverse">&nbsp;&nbsp;Contact</a></li>
+
+                                <!--BLOG-->
+                                <li class="hidden-xs" role="presentation" data-toggle="tooltip" data-placement="bottom"
+                                    title="Blog"><a class="fa fa-wordpress fa-2x fa-inverse"
+                                                    href="https://mikemeding.wordpress.com/"></a></li>
+                                <li class="visible-xs-block" role="presentation"><a
+                                        href="https://mikemeding.wordpress.com/" class="fa fa-wordpress fa-inverse">
+                                    &nbsp;&nbsp;Wordpress</a></li>
+
+                                <!--WEBCAM-->
+                                <li class="hidden-xs" role="presentation" data-toggle="tooltip" data-placement="bottom"
+                                    title="Live Webcam"><a class="fa fa-camera fa-2x fa-inverse"
+                                                           ui-sref="cam"></a></li>
+                                <li class="visible-xs-block" role="presentation" ui-sref="cam"><a
+                                        class="fa fa-camera fa-inverse">&nbsp;&nbsp;Webcam</a></li>
+
+                            </ul>
+                        </div>
+                        <!-- /.navbar-collapse -->
                     </div>
-
-                    <!-- Collect the nav links, forms, and other content for toggling -->
-                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                        <ul class="nav navbar-nav">
-                            <li role="presentation" ui-sref="home" data-toggle="tooltip" data-placement="bottom"
-                                title="Home Page"><a class="fa fa-home fa-2x fa-inverse"></a></li>
-                            <li role="presentation" ui-sref="resume" data-toggle="tooltip" data-placement="bottom"
-                                title="Résumé"><a class="fa fa-file-text fa-2x fa-inverse"></a></li>
-                            <li role="presentation" ui-sref="about" data-toggle="tooltip" data-placement="bottom"
-                                title="About"><a class="fa fa-user fa-2x fa-inverse"></a></li>
-                            <li role="presentation" ui-sref="contact" data-toggle="tooltip" data-placement="bottom"
-                                title="Contact"><a class="fa fa-share-alt-square fa-2x fa-inverse"></a></li>
-                            <li role="presentation" data-toggle="tooltip" data-placement="bottom"
-                                title="Blog"><a class="fa fa-wordpress fa-2x fa-inverse"
-                                                href="https://mikemeding.wordpress.com/"></a></li>
-                            <li role="presentation" data-toggle="tooltip" data-placement="bottom"
-                                title="Live Webcam"><a class="fa fa-camera fa-2x fa-inverse"
-                                                       ui-sref="cam"></a></li>
-                        </ul>
-                    </div>
-                    <!-- /.navbar-collapse -->
-                </div>
-                <!-- /.container-fluid -->
-            </nav>
+                    <!-- /.container-fluid -->
+                </nav>
+            </div>
         </div>
     </div>
-</div>
 
-<div class="container" ng-controller="MainSiteController">
+    <div class="container" ng-controller="MainSiteController">
 
-    <div class="col-lg-8 col-lg-offset-2">
-        <!--ui view insertion point-->
-        <div ui-view></div>
+        <div class="col-lg-8 col-lg-offset-2">
+            <!--ui view insertion point-->
+            <div ui-view></div>
 
-        <!--Copyright Footer-->
-        <div class="footer">
-            <p class="text-center">© Michael U.B. Meding 2015</p>
+            <!--Copyright Footer-->
+            <div class="footer">
+                <p class="text-center">© Michael U.B. Meding 2015</p>
+            </div>
+
         </div>
 
     </div>
