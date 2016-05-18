@@ -9,7 +9,7 @@
 
     var app = angular.module('mainSite');
 
-    app.controller("HomeController", ["$rootScope", "$scope", "$http", function ($rootScope, $scope, $http) {
+    app.controller("HomeController", ["$rootScope", "$scope", "$http", "$sce", function ($rootScope, $scope, $http, $sce) {
         $scope.title = "home controller";
 
 
@@ -22,6 +22,10 @@
         }, function errorCallback(response) {
             console.error(response);
         });
+
+        $scope.sanitize = function (rawHTML) {
+            return $sce.trustAsHtml(rawHTML);
+        };
 
     }]);
 })();

@@ -13,7 +13,7 @@
     "use-strict";
 
     //angular libraries
-    var app = angular.module('mainSite', ["ui.router", "bootstrapLightbox", "ui.bootstrap"]);
+    var app = angular.module('mainSite', ["ui.router", "bootstrapLightbox", "ui.bootstrap","ngSanitize"]);
 
     //routing configuration
     app.config(function myAppConfig($stateProvider, $urlRouterProvider) {

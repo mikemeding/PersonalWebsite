@@ -6,7 +6,14 @@
         developer
         part time for the last 3 years and have been involved with many interesting projects during that time.</p>
 
-    <h3>{{blogPosts}}</h3>
+    <!--<h3>{{blogPosts}}</h3>-->
+    <div ng-repeat="post in blogPosts">
+        <h3>{{post.title}}</h3>
+        <p>description: {{post.description}}</p>
+        <ng-bind-html ng-bind-html="sanitize(post.content)"></ng-bind-html>
+        <p>created: {{post.created | date:'medium'}}</p>
+    </div>
+
 
     <h3>Projects</h3>
     <ul class="list-group">
