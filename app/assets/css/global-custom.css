@@ -1,0 +1,217 @@
+/*
+ * Copyright (c) 2016 Mike Meding -- All Rights Reserved.
+ *
+ * Created on : December 15, 2016, 4:08:25 PM
+ * Author     : mike
+ */
+
+.container-full {
+    margin: 0 auto;
+    width: 100%;
+}
+
+img {
+    border: 0 none;
+    display: inline-block;
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+body {
+    position: relative;
+    /*padding-top: 40px;*/
+    background-color: black;
+}
+
+/*========================================================================================*/
+/* CUSTOM NAVBAR */
+/*========================================================================================*/
+
+.navbar-inverse {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-color: #E7E7E7;
+}
+
+.navbar-inverse .navbar-brand {
+    color: #515151;
+}
+
+.navbar-inverse .navbar-brand:hover,
+.navbar-inverse .navbar-brand:focus {
+    color: #515151;
+    background-color: transparent;
+}
+
+.navbar-inverse .navbar-text {
+    color: #515151;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #515151;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus {
+    color: #515151;
+    background-color: rgba(128, 128, 128, 0.5);
+}
+
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
+    color: #515151;
+    background-color: rgba(128, 128, 128, 0.5);
+}
+
+.navbar-inverse .navbar-nav > .disabled > a,
+.navbar-inverse .navbar-nav > .disabled > a:hover,
+.navbar-inverse .navbar-nav > .disabled > a:focus {
+    color: #444444;
+    background-color: transparent;
+}
+
+.navbar-inverse .navbar-toggle {
+    border-color: transparent;
+}
+
+.navbar-inverse .navbar-toggle:hover,
+.navbar-inverse .navbar-toggle:focus {
+    background-color: transparent;
+}
+
+.navbar-inverse .navbar-toggle .icon-bar {
+    background-color: #515151;
+}
+
+.navbar-inverse .navbar-collapse,
+.navbar-inverse .navbar-form {
+    border-color: #007196;
+}
+
+.navbar-inverse .navbar-nav > .open > a,
+.navbar-inverse .navbar-nav > .open > a:hover,
+.navbar-inverse .navbar-nav > .open > a:focus {
+    background-color: rgba(128, 128, 128, 0.5);
+    color: #515151;
+}
+
+@media (max-width: 767px) {
+    .navbar-inverse .navbar-nav .open .dropdown-menu > .dropdown-header {
+        border-color: rgba(128, 128, 128, 0.5);
+    }
+
+    .navbar-inverse .navbar-nav .open .dropdown-menu .divider {
+        background-color: rgba(128, 128, 128, 0.5);
+    }
+
+    .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
+        color: #515151;
+    }
+
+    .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:focus {
+        color: #515151;
+        background-color: rgba(128, 128, 128, 0.5);
+    }
+
+    .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a,
+    .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:hover,
+    .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:focus {
+        color: #515151;
+        background-color: rgba(128, 128, 128, 0.5);
+    }
+
+    .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a,
+    .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+    .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+        color: #444444;
+        background-color: transparent;
+    }
+}
+
+.navbar-inverse .navbar-link {
+    color: #515151;
+}
+
+.navbar-inverse .navbar-link:hover {
+    color: #515151;
+}
+
+.navbar-inverse .btn-link {
+    color: #515151;
+}
+
+.navbar-inverse .btn-link:hover,
+.navbar-inverse .btn-link:focus {
+    color: #515151;
+}
+
+.navbar-inverse .btn-link[disabled]:hover,
+fieldset[disabled] .navbar-inverse .btn-link:hover,
+.navbar-inverse .btn-link[disabled]:focus,
+fieldset[disabled] .navbar-inverse .btn-link:focus {
+    color: #444444;
+}
+
+/*.navbar-brand {*/
+    /*padding: 0px;*/
+/*}*/
+/*.navbar-brand>img {*/
+    /*height: 100%;*/
+    /*padding: 2px;*/
+    /*width: auto;*/
+/*}*/
+
+/*========================================================================================*/
+/* SECTION STYLING */
+/*========================================================================================*/
+
+#section1 {
+    padding-top: 70px;
+    height: 700px;
+    color: #ffffff;
+    /*background-color: #1E88E5;*/
+    /*opacity: 0.5;*/
+    background-image: url('../img/MVI_0001_1_cropped.gif');
+    background-size: cover;
+    /*background-repeat: no-repeat;*/
+    /*object-fit:cover;*/
+}
+
+div.section-content {
+    opacity: 1;
+}
+
+#section2 {
+    padding-top: 50px;
+    height: 700px;
+    color: #ffffff;
+    /*background-color: #673ab7;*/
+    background-image: url('../img/MVI_0002_1_cropped.gif');
+    background-size: cover;
+    /*object-fit:cover;*/
+}
+
+#section3 {
+    padding-top: 50px;
+    height: 700px;
+    color: #ffffff;
+    /*background-color: #ff9800;*/
+    background-image: url('../img/MVI_0004_1_cropped.gif');
+    background-size: cover;
+}
+
+#section41 {
+    padding-top: 50px;
+    height: 500px;
+    color: #fff;
+    background-color: #00bcd4;
+}
+
+#section42 {
+    padding-top: 50px;
+    height: 500px;
+    color: #fff;
+    background-color: #009688;
+}

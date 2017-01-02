@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!--
+ ==========================================================================
+ Written by: Michael Meding
+ 2016-12-12
+
+ This is the main include page where all CDN dependencies are pulled in and
+ all routing and controller scripts are also pulled in.
+ ==========================================================================
+-->
+
+<html>
+<head lang="en">
+    <title>mikemeding</title>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/icons/favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Local un-manged CSS libraries-->
+    <link rel="stylesheet" href="assets/css/bootstrap.css"/>
+    <!--<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">-->
+    <link href="assets/css/animate.css" rel="stylesheet">
+    <link href="assets/css/global-custom.css" rel="stylesheet">
+
+    <!--bootstrap core-->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+
+    <!--angular-->
+    <script src="node_modules/angular/angular.js"></script>
+    <!--<script src="node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>-->
+
+    <!--APPLICATION DEPENDENCIES-->
+    <!--Application Routing and Security-->
+    <script src="app.js"></script>
+
+    <!--Private home controller scripts-->
+    <script src="modules/home/homeController.js"></script>
+
+</head>
+<body ng-app="psite" class="container-full" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!--<a class="navbar-brand" href="#"><img src="assets/img/MM2_Logo48x48-2.svg" alt="mm logo">-->
+            <!--</a>-->
+            <!--<img class="navbar-brand center-block" src="assets/img/MM2_Logo48x48-2.svg">-->
+            <a class="navbar-brand center-block" href="#">Mike<b>Meding</b>.com</a>
+        </div>
+        <div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#section1">Section 1</a></li>
+                    <li><a href="#section2">Section 2</a></li>
+                    <li><a href="#section3">Section 3</a></li>
+                    <!--<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Section 4 <span class="caret"></span></a>-->
+                        <!--<ul class="dropdown-menu">-->
+                            <!--<li><a href="#section41">Section 4-1</a></li>-->
+                            <!--<li><a href="#section42">Section 4-2</a></li>-->
+                        <!--</ul>-->
+                    <!--</li>-->
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<div ng-include="'modules/home/homeView.html'"></div>
+
+</body>
+</html>

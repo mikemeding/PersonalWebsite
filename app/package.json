@@ -1,0 +1,33 @@
+{
+  "name": "personalwebsite",
+  "version": "1.0.0",
+  "description": "app landing page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/OutSmartPowerSystems/zeus.git"
+  },
+  "author": "mike meding",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OutSmartPowerSystems/zeus/issues"
+  },
+  "homepage": "https://github.com/OutSmartPowerSystems/zeus#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-connect": "^5.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-watch": "^4.3.10"
+  },
+  "dependencies": {
+    "angular": "^1.6.0",
+    "angular-ui-bootstrap": "^2.2.0",
+    "angular-ui-router": "^0.3.2",
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.1.1",
+    "ui-bootstrap": "^0.1.5"
+  }
+}
