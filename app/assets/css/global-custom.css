@@ -20,8 +20,71 @@ img {
 
 body {
     position: relative;
-    /*padding-top: 40px;*/
     background-color: black;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.section-heading {
+    color: white;
+    font-size: 4em;
+}
+
+.sub-heading {
+    color: darkgray;
+}
+
+.resume-block {
+    margin-top: 70px;
+}
+
+.resume-link {
+    font-size: 2em;
+    color: lightgrey;
+}
+
+.resume-link:hover {
+    color: steelblue;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.contact-link {
+    text-decoration: none;
+    color: transparent;
+}
+.contact-link:hover {
+    color: transparent;
+}
+
+/*========================================================================================*/
+/* SECTION STYLING */
+/*========================================================================================*/
+
+#section1, #section2, #section3, #section4 {
+    padding-top: 70px; /*Text Offset*/
+    height: 700px;
+    color: #ffffff; /*Text Color*/
+    background-size: cover;
+    background-position: center;
+}
+
+#section1 {
+    background-image: url('../img/MVI_0004_1_cropped.gif');
+}
+
+#section2 {
+    background-image: url('../img/MVI_0003_1_cropped.gif');
+}
+
+#section3 {
+    background-image: url('../img/MVI_0002_1_cropped.gif');
+}
+
+#section4 {
+    background-image: url('../img/MVI_0006_1_cropped.gif');
 }
 
 /*========================================================================================*/
@@ -155,63 +218,10 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 }
 
 /*.navbar-brand {*/
-    /*padding: 0px;*/
+/*padding: 0px;*/
 /*}*/
 /*.navbar-brand>img {*/
-    /*height: 100%;*/
-    /*padding: 2px;*/
-    /*width: auto;*/
+/*height: 100%;*/
+/*padding: 2px;*/
+/*width: auto;*/
 /*}*/
-
-/*========================================================================================*/
-/* SECTION STYLING */
-/*========================================================================================*/
-
-#section1 {
-    padding-top: 70px;
-    height: 700px;
-    color: #ffffff;
-    /*background-color: #1E88E5;*/
-    /*opacity: 0.5;*/
-    background-image: url('../img/MVI_0001_1_cropped.gif');
-    background-size: cover;
-    /*background-repeat: no-repeat;*/
-    /*object-fit:cover;*/
-}
-
-div.section-content {
-    opacity: 1;
-}
-
-#section2 {
-    padding-top: 50px;
-    height: 700px;
-    color: #ffffff;
-    /*background-color: #673ab7;*/
-    background-image: url('../img/MVI_0002_1_cropped.gif');
-    background-size: cover;
-    /*object-fit:cover;*/
-}
-
-#section3 {
-    padding-top: 50px;
-    height: 700px;
-    color: #ffffff;
-    /*background-color: #ff9800;*/
-    background-image: url('../img/MVI_0004_1_cropped.gif');
-    background-size: cover;
-}
-
-#section41 {
-    padding-top: 50px;
-    height: 500px;
-    color: #fff;
-    background-color: #00bcd4;
-}
-
-#section42 {
-    padding-top: 50px;
-    height: 500px;
-    color: #fff;
-    background-color: #009688;
-}
