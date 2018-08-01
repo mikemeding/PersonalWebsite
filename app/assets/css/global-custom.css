@@ -12,10 +12,10 @@
 
 img {
     border: 0 none;
-    display: inline-block;
-    height: auto;
-    max-width: 100%;
-    vertical-align: middle;
+    /*display: inline-block;*/
+    /*height: auto;*/
+    /*max-width: 100%;*/
+    /*vertical-align: middle;*/
 }
 
 body {
@@ -55,6 +55,7 @@ a:hover {
     text-decoration: none;
     color: transparent;
 }
+
 .contact-link:hover {
     color: transparent;
 }
@@ -217,8 +218,22 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
     color: #444444;
 }
 
+/*========================================================================================*/
+/* Custom image carousel */
+/*========================================================================================*/
+.carousel-item img {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+}
+
 .carousel-inner .item {
     height: 500px;
+}
+
+.carousel-caption h3, p {
+    color: white;
+    text-shadow: 2px 2px 3px #000000;
 }
 
 /*.navbar-brand {*/
