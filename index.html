@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>mikemeding</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/personal.css">
+
+    <style type="text/css">
+        .panel {
+            height: 100%;
+            width: 100%;
+        }
+
+        .panel.green {
+            margin-bottom: 400px
+        }
+    </style>
+</head>
+<body>
+
+<!--jQuery google hosted-->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+<!--ScrollMagic and deps-->
+<script src="node_modules/scrollmagic/scrollmagic/uncompressed/ScrollMagic.js"></script>
+<script src="node_modules/scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators.js"></script>
+<script src="node_modules/scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap.js"></script>
+
+<section class="panel titlebg">
+    <b>ONE</b>
+</section>
+<section class="panel turqoise">
+    <b>TWO</b>
+</section>
+<section class="panel green">
+    <b>THREE</b>
+</section>
+<section class="panel bordeaux">
+    <b>FOUR</b>
+</section>
+<script>
+    $(function () { // wait for document ready
+
+        // init
+        var controller = new ScrollMagic.Controller({
+            globalSceneOptions: {
+                triggerHook: 'onLeave'
+            }
+        });
+
+        // get all slides
+        var slides = document.querySelectorAll("section.panel");
+
+        // create scene for every slide
+        for (var i = 0; i < slides.length; i++) {
+            new ScrollMagic.Scene({
+                triggerElement: slides[i]
+            })
+                .setPin(slides[i])
+                // .addIndicators() // add indicators (requires plugin)
+                .addTo(controller);
+        }
+
+    });
+</script>
+
+</body>
+</html>
