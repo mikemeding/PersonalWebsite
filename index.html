@@ -4,71 +4,80 @@
     <meta charset="UTF-8">
     <title>mikemeding</title>
 
-    <!-- Styles -->
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <!--    favicon crap-->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/fonts/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/fonts/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/fonts/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/fonts/favicon/site.webmanifest">
 
-    <link rel="stylesheet" href="assets/css/base.css">
+    <!--    styles + fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto+Mono" rel="stylesheet">
+    <link rel="stylesheet" href="node_modules/reset-css/reset.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet" href="assets/css/personal.css">
 
-    <style type="text/css">
-        .panel {
-            height: 100%;
-            width: 100%;
-        }
-
-        .panel.green {
-            margin-bottom: 400px
-        }
-    </style>
+    <!--    scripts-->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </head>
 <body>
 
-<!--jQuery google hosted-->
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<main class="wrapper">
+    <section class="section parallax bg1">
+        <h1 class="display-2 bounceInDown animated">Hi I'm &nbsp;</h1>
+        <h1 class="display-3 bounceInUp animated"><br>{mike}</h1>
+    </section>
+    <section class="section static1">
+        <div class="d-flex flex-column justify-content-center">
+            <div class="p-2">
+                <iframe height='160' width='300' frameborder='0' allowtransparency='true' scrolling='no'
+                        src='https://www.strava.com/athletes/2087405/activity-summary/3052be742cc8e8182c546b7472ff3d97103ed17e'></iframe>
+            </div>
+            <div class="p-2">
+                <iframe height='454' width='300' frameborder='0' allowtransparency='true' scrolling='no'
+                        src='https://www.strava.com/athletes/2087405/latest-rides/3052be742cc8e8182c546b7472ff3d97103ed17e'></iframe>
+            </div>
+        </div>
+    </section>
+    <section class="section parallax bg2">
+        <h1>Cold Shit</h1>
+    </section>
+    <section class="section static2">
+        <h1>Something else</h1>
+    </section>
+    <section class="section parallax bg3">
 
-<!--ScrollMagic and deps-->
-<script src="node_modules/scrollmagic/scrollmagic/uncompressed/ScrollMagic.js"></script>
-<script src="node_modules/scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators.js"></script>
-<script src="node_modules/scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap.js"></script>
+        <div class="d-flex flex-column justify-content-center">
 
-<section class="panel titlebg">
-    <b>ONE</b>
-</section>
-<section class="panel turqoise">
-    <b>TWO</b>
-</section>
-<section class="panel green">
-    <b>THREE</b>
-</section>
-<section class="panel bordeaux">
-    <b>FOUR</b>
-</section>
+            <h1 class="text-center display-2">Lets get in touch,</h1>
+
+            <div class="p-2">
+                <a class="contact-link" href="mailto:mike@mikemeding.com"><img
+                        src="assets/icons/email.svg" alt="" width="150px"></a>
+                <a class="contact-link" href="https://twitter.com/MikeMeding"><img
+                        src="assets/icons/twitter.svg" alt="" width="150px"></a>
+                <a class="contact-link" href="https://www.instagram.com/hexzor2204/"><img
+                        src="assets/icons/instagram.svg" alt="" width="150px"></a>
+                <a class="contact-link" href="https://github.com/mikemeding"><img
+                        src="assets/icons/github-logo.svg" alt="" width="150px"></a>
+                <!--                <a class="contact-link" href="https://mikemeding.wordpress.com/"><img-->
+                <!--                        src="assets/icons/wordpress.svg" alt="" width="150px"></a>-->
+                <a class="contact-link" href="https://www.linkedin.com/in/michael-meding-9a6190a8"><img
+                        src="assets/icons/linkedin.svg" alt="" width="150px"></a>
+            </div>
+
+        </div>
+
+
+    </section>
+</main>
+
+<!--<div class="spacer s2"></div>-->
+
 <script>
-    $(function () { // wait for document ready
-
-        // init
-        var controller = new ScrollMagic.Controller({
-            globalSceneOptions: {
-                triggerHook: 'onLeave'
-            }
-        });
-
-        // get all slides
-        var slides = document.querySelectorAll("section.panel");
-
-        // create scene for every slide
-        for (var i = 0; i < slides.length; i++) {
-            new ScrollMagic.Scene({
-                triggerElement: slides[i]
-            })
-                .setPin(slides[i])
-                // .addIndicators() // add indicators (requires plugin)
-                .addTo(controller);
-        }
-
+    $(window).on("load", function(){
+        // Handler when all assets (including images) are loaded
+        console.log("test")
     });
 </script>
-
-</body>
-</html>
