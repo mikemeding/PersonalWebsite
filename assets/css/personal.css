@@ -56,11 +56,11 @@ body, html {
 
 /* The styling for the static div. */
 .static1 {
-    background: #ff691a;
+    background: #9a9699;
 }
 
 .static2 {
-    background: #9a9699;
+    background: #ff691a;
 }
 
 /* Sets the actual background images to adorable kitties. This part is crucial. */

@@ -23,12 +23,78 @@
 </head>
 <body>
 
+<div id="loading-modal" class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <img class="img-fluid flex-fill" src="assets/img/loading.gif" alt="">
+    </div>
+</div>
+
 <main class="wrapper">
+    <!--    LANDING SECTION-->
     <section class="section parallax bg1">
-        <h1 class="display-2 bounceInDown animated">Hi I'm &nbsp;</h1>
-        <h1 class="display-3 bounceInUp animated"><br>{mike}</h1>
+        <h1 id="header-text-1" class="display-2 invisible">Hi I'm &nbsp;</h1>
+        <h1 id="header-text-2" class="display-3 invisible"><br>{mike}</h1>
     </section>
+    <!--    HISTORY SECTION-->
     <section class="section static1">
+        <div class="d-flex flex-column justify-content-center">
+
+            <div class="d-flex flex-row justify-content-center">
+                <h1 class="display-4 text-center" style="margin-bottom: 50px"> I'm a {full-stack} Software
+                    Developer</h1>
+            </div>
+            <div class="d-flex flex-row justify-content-center" style="margin-bottom: 20px;">
+                <div class="d-flex flex-column" style="max-width: 20%;">
+                    <img src="assets/img/zea-720x585.png" class="img-fluid rounded">
+                </div>
+                <div class="d-flex flex-column" style="max-width: 50%; margin-left: 20px">
+                    <b>Zea Biosciences</b>
+                    <b>Lead Software Developer</b>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </div>
+
+            <div class="d-flex flex-row justify-content-center" style="margin-bottom: 20px;">
+                <div class="d-flex flex-column" style="max-width: 20%;">
+                    <img src="assets/img/efacto-720x585.png" class="img-fluid rounded">
+                </div>
+                <div class="d-flex flex-column" style="max-width: 50%; margin-left: 20px">
+                    <b>Efacto</b>
+                    <b>Full Stack Software Developer</b>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </div>
+            <div class="d-flex flex-row justify-content-center" style="margin-bottom: 20px;">
+                <div class="d-flex flex-column" style="max-width: 20%;">
+                    <img src="assets/img/os-720x585.png" class="img-fluid rounded">
+                </div>
+                <div class="d-flex flex-column" style="max-width: 50%; margin-left: 20px">
+                    <b>Outsmart Power Systems</b>
+                    <b>Software Developer</b>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="section parallax bg2">
+        <h1>Cold Shit</h1>
+    </section>
+    <section class="section static2">
         <div class="d-flex flex-column justify-content-center">
             <div class="p-2">
                 <iframe height='160' width='300' frameborder='0' allowtransparency='true' scrolling='no'
@@ -39,12 +105,6 @@
                         src='https://www.strava.com/athletes/2087405/latest-rides/3052be742cc8e8182c546b7472ff3d97103ed17e'></iframe>
             </div>
         </div>
-    </section>
-    <section class="section parallax bg2">
-        <h1>Cold Shit</h1>
-    </section>
-    <section class="section static2">
-        <h1>Something else</h1>
     </section>
     <section class="section parallax bg3">
 
@@ -76,8 +136,13 @@
 <!--<div class="spacer s2"></div>-->
 
 <script>
-    $(window).on("load", function(){
+    $('#loading-modal').modal('show');
+    $(window).on("load", function () {
         // Handler when all assets (including images) are loaded
-        console.log("test")
+        $('#loading-modal').modal('hide');
+        $('#header-text-1,#header-text-2').removeClass("invisible");
+        $('#header-text-1').addClass("bounceInDown animated");
+        $('#header-text-2').addClass("bounceInUp animated");
+
     });
 </script>
