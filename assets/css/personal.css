@@ -26,6 +26,24 @@ body, html {
     position: relative;
     /* The height of the container. Must be set, but it doesn't really matter what the value is. */
     height: 100vh;
+    margin-left: -10px;
+
+    /* For text formatting. */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 0 0 5px #000;
+}
+
+.section-small {
+    /* Needed for children to be absolutely positioned relative to the parent. */
+    position: relative;
+    /* The height of the container. Must be set, but it doesn't really matter what the value is. */
+    height: 100vh;
+    margin-left: -10px;
+    margin-top: -20vh;
+    margin-bottom: -20vh;
 
     /* For text formatting. */
     display: flex;
@@ -56,25 +74,33 @@ body, html {
 
 /* The styling for the static div. */
 .static1 {
-    background: #9a9699;
+    background: #12c654;
 }
 
 .static2 {
     background: #ff691a;
 }
 
-/* Sets the actual background images to adorable kitties. This part is crucial. */
+.static3 {
+    background: #9a9699;
+}
+
 .bg1::after {
     background-image: url('../img/stock1.jpg');
     background-size: cover;
 }
 
 .bg2::after {
-    background-image: url('../img/stock2.jpg');
+    background-image: url('../img/stock4.jpg');
     background-size: cover;
 }
 
 .bg3::after {
     background-image: url('../img/stock3.jpg');
+    background-size: cover;
+}
+
+.bg4::after {
+    background-image: url('../img/contact.jpg');
     background-size: cover;
 }
