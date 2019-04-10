@@ -74,7 +74,8 @@ body, html {
 
 /* The styling for the static div. */
 .static1 {
-    background: #12c654;
+    background-color: #12c654;
+    background-image: linear-gradient(to bottom right, forestgreen, greenyellow);
 }
 
 .static2 {
@@ -83,20 +84,24 @@ body, html {
 
 .static3 {
     background: #9a9699;
+    background-image: linear-gradient(to left, gray, #666666);
 }
 
 .bg1::after {
-    background-image: url('../img/stock1.jpg');
+    /*background-image: url('../img/stock1.jpg');*/
+    background-image: url('../img/selfie3.jpg');
+    background-repeat: no-repeat;
+    background-position: right top;
     background-size: cover;
 }
 
 .bg2::after {
-    background-image: url('../img/stock4.jpg');
+    background-image: url('../img/stock6.jpg');
     background-size: cover;
 }
 
 .bg3::after {
-    background-image: url('../img/stock3.jpg');
+    background-image: url('../img/stock7.jpg');
     background-size: cover;
 }
 
