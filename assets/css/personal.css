@@ -89,19 +89,19 @@ body, html {
 
 .bg1::after {
     /*background-image: url('../img/stock1.jpg');*/
-    background-image: url('../img/selfie3.jpg');
+    background-image: url('../img/main.jpg');
     background-repeat: no-repeat;
-    background-position: right top;
+    background-position: left top;
     background-size: cover;
 }
 
 .bg2::after {
-    background-image: url('../img/stock6.jpg');
+    background-image: url('../img/mystock1.jpg');
     background-size: cover;
 }
 
 .bg3::after {
-    background-image: url('../img/stock7.jpg');
+    background-image: url('../img/mystock2.jpg');
     background-size: cover;
 }
 
