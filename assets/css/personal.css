@@ -74,8 +74,8 @@ body, html {
 
 /* The styling for the static div. */
 .static1 {
-    background-color: #12c654;
-    background-image: linear-gradient(to bottom right, forestgreen, greenyellow);
+    background-color: #ba324b;
+    background-image: linear-gradient(to right, #ba324b, #4f4f4f);
 }
 
 .static2 {
