@@ -42,8 +42,8 @@ body, html {
     /* The height of the container. Must be set, but it doesn't really matter what the value is. */
     height: 100vh;
     margin-left: -10px;
-    margin-top: -20vh;
-    margin-bottom: -20vh;
+    margin-top: -30vh;
+    margin-bottom: -30vh;
 
     /* For text formatting. */
     display: flex;
@@ -91,17 +91,17 @@ body, html {
     /*background-image: url('../img/stock1.jpg');*/
     background-image: url('../img/main.jpg');
     background-repeat: no-repeat;
-    background-position: left top;
+    background-position: top center;
     background-size: cover;
 }
 
 .bg2::after {
-    background-image: url('../img/mystock1.jpg');
+    background-image: url('../img/stock6.jpg');
     background-size: cover;
 }
 
 .bg3::after {
-    background-image: url('../img/mystock2.jpg');
+    background-image: url('../img/stock8.jpg');
     background-size: cover;
 }
 
