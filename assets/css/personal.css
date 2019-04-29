@@ -87,6 +87,11 @@ body, html {
     background-image: linear-gradient(to left, gray, #666666);
 }
 
+.static4 {
+    background: #1F4BB8;
+    background-image: linear-gradient(to left, #19264c, #1F4BB8);
+}
+
 .bg1::after {
     /*background-image: url('../img/stock1.jpg');*/
     background-image: url('../img/main.jpg');
@@ -101,11 +106,17 @@ body, html {
 }
 
 .bg3::after {
-    background-image: url('../img/stock8.jpg');
+    background-image: url('../img/mystock3-cropped.jpg');
+    background-position: center;
     background-size: cover;
 }
 
 .bg4::after {
     background-image: url('../img/contact.jpg');
+    background-size: cover;
+}
+
+.bg5::after {
+    background-image: url('../img/stock9.jpg');
     background-size: cover;
 }
