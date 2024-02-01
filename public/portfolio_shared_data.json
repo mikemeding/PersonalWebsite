@@ -1,6 +1,6 @@
 {
     "basic_info": {
-      "name": "Mike Meding",
+      "name": "Mike Meding, M.S.",
       "titles": ["Senior Software Engineer", "Dev Team lead", "Linux Sysadmin", "Product Development Consultant" ],
       "social": [
         {
@@ -19,14 +19,39 @@
     "skills": {
       "icons": [
         {
-          "name": "HTML 5",
-          "class": "devicon-html5-plain",
+          "name": "Python",
+          "class": "devicon-python-plain",
           "level": "95"
         },
         {
-          "name": "CSS 3",
-          "class": "devicon-css3-plain",
+          "name": "Java",
+          "class": "devicon-java-plain",
           "level": "95"
+        },
+        {
+          "name": "NodeJS",
+          "class": "devicon-nodejs-plain",
+          "level": "70"
+        },
+        {
+          "name": "Kafka",
+          "class": "devicon-apachekafka-original",
+          "level": "85"
+        },
+        {
+          "name": "AWS Services",
+          "class": "devicon-amazonwebservices-original",
+          "level": "65"
+        },
+        {
+          "name": "Docker",
+          "class": "devicon-docker-plain",
+          "level": "95"
+        },
+        {
+          "name": "MySql",
+          "class": "devicon-mysql-plain",
+          "level": "60"
         },
         {
           "name": "Angular",
@@ -34,34 +59,14 @@
           "level": "80"
         },
         {
-          "name": "TypeScript",
-          "class": "devicon-typescript-plain",
-          "level": "90"
-        },
-        {
-          "name": "JavaScript",
-          "class": "devicon-javascript-plain",
-          "level": "70"
+          "name": "React",
+          "class": "devicon-react-original",
+          "level": "80"
         },
         {
           "name": "Sass",
           "class": "devicon-sass-original",
           "level": "75"
-        },
-        {
-          "name": "Bootstrap",
-          "class": "devicon-bootstrap-plain",
-          "level": "85"
-        },
-        {
-          "name": "C#",
-          "class": "devicon-csharp-plain",
-          "level": "65"
-        },
-        {
-          "name": "MySql",
-          "class": "devicon-mysql-plain",
-          "level": "60"
         }
       ]
     }

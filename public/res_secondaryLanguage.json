@@ -1,115 +1,117 @@
 {
     "basic_info": {
-      "description_header": "Cześć",
-      "description": "👋 Jestem Davina Griss. Fikcyjna osoba na potrzeby demonstracji. Pracuję z najnowszymi frameworkami front-end takimi jak Angular, React i Vue. To co teraz widzisz to szablon portfolio od Dorota1997. Jeżeli podoba Ci się ten szablon portfolio nie zapomnij o ⭐, żeby było bardziej rozpoznawalne dla innych użytkowników. Dzięki 💜",
+      "description_header": "Hallo",
+      "description": "👋 Ich bin Mike! Ich bin ein formal ausgebildeter Software-Ingenieur mit jahrelanger Berufserfahrung in der Entwicklung von Full-Stack-Web- und Nicht-Web-Anwendungen. Diese Anwendungen reichten von Betriebsunterstützungssoftware bis hin zu detaillierten Energiedatenanalysen und umfassten sowohl strukturierte SQL- als auch unstrukturierte Daten. Obwohl Software-Engineering den Großteil meiner beruflichen Laufbahn ausmacht, ist es bei weitem nicht die einzige Kompetenz in meinem Repertoire. Die Arbeit hauptsächlich mit Start-up-Unternehmen hat mir vielfältige Fähigkeiten vermittelt, von der Frontend-UI/UX-Entwicklung bis hin zu Bare-Metal-Arbeiten im Elektro-/Maschinenbau. Während ich meinen Master an der University of Massachusetts Lowell machte, entwickelte ich eine Leidenschaft für den 3D-Druck und die angrenzenden Technologien und schrieb eine der ersten cloudbasierten Slicing-Engines, bestehend aus Software, die digitale Modelle in 3D-Drucker-kompatiblen GCode umwandelt. Bei Zea Biosciences habe ich eine Plattform aufgebaut, die sowohl Benutzer- als auch Sensordaten nutzte, um eine Analyse des Zustands lebender Pflanzen durchzuführen. Dies ermöglichte es den Technikern, maßgeschneiderte Lösungen speziell für jede Anlage zu entwickeln.", 
       "section_name": {
-        "about": "O mnie",
-        "projects": "Projekty",
-        "skills": "Umiejętności",
-        "experience": "Doświadczenie"
+        "about": "über mich",
+        "projects": "Projekte",
+        "skills": "Fähigkeiten",
+        "experience": "Erfahrung"
       }
     },
     "projects": [
       {
-        "title": "Animal Shelter",
-        "startDate": "2020",
-        "description": "Najbardziej rozbudowana aplikacja nad którą miałam okazję pracować. Poznałam dużo technologii a mój kod by sprawdzany przez super opiekuna. Aplikacja obsługuje wszystkie procesy adopcji i pozwala na przechowywanie wszelkiej dokumentacji związanej z adopcją zwierząt ze schroniska.",
+        "title": "Car Restoration",
+        "startDate": "2023",
+        "description": "One of my passtimes is spending time in my garage restoring my 1960 Buick LeSabre and my 1971 Chevrolet C10. Before I was a Software Engineer I worked as an auto shop mechanic where I fell in love with american classics",
         "images": [
-          "images/portfolio/animal-shelter/p1.jpg",
-          "images/portfolio/animal-shelter/p2.jpg"
+          "images/portfolio/cars/p1.jpg",
+          "images/portfolio/cars/p2.jpg",
+          "images/portfolio/cars/p3.jpg",
+          "images/portfolio/cars/p4.jpg"
         ],
-        "url": "",
+        "url": "https://www.instagram.com/nerdy_cyclist/",
         "technologies": [
-          {
-            "class": "devicon-angularjs-plain",
-            "name": "Angular"
-          },
-          {
-            "class": "devicon-typescript-plain",
-            "name": "TypeScript"
-          },
-          {
-            "class": "devicon-csharp-plain",
-            "name": "C#"
-          }
         ]
       },
       {
         "title": "Photography",
-        "startDate": "2018",
-        "description": "Osobisty projekt na przedmiot ze studiów. Byłam odpowiedzilna za testowanie aplikacji, która optymalizuje zdjęcia z pomocą popularnych algorytmów używanych przed edytory grafiki takie jak Pixlr czy Adobe Photoshop. Otrzymałam 5-tkę za projekt :)",
+        "startDate": "2015",
+        "description": "I enjoy photography as one of my extended hobbies and have been paid professionally for my work. Usually focusing on nature and portrait photography.",
         "images": [
           "images/portfolio/photography/p1.jpg",
-          "images/portfolio/photography/p2.jpg"
+          "images/portfolio/photography/p2.jpg",
+          "images/portfolio/photography/p3.jpg",
+          "images/portfolio/photography/p4.jpg",
+          "images/portfolio/photography/p5.jpg"
         ],
-        "url": "https://github.com",
+        "url": "https://www.instagram.com/nerdy_cyclist/",
         "technologies": [
-          {
-            "class": "devicon-react-original",
-            "name": "React"
-          },
-          {
-            "class": "devicon-javascript-plain",
-            "name": "JavaScript"
-          }
         ]
       },
       {
-        "title": "3D Object Viewer",
-        "startDate": "2015",
-        "description": "Jedna z pierwszych aplikacji nad którymi pracowałam na stażu. Musiałam przygotować front-end dla aplikacji, która pokazuje modele 3D znanych budynków. To był także mój pierwszy projekt w frameworku Angular. Dużo się nauczyłam!",
+        "title": "Cats",
+        "description": "My wife and I have two demons that happen to take the form of cats. Their names are Frankie and Freya and I'm totally kidding about the demon part... mostly.",
         "images": [
-          "images/portfolio/adventure/p1.jpg",
-          "images/portfolio/adventure/p2.jpg"
+          "images/portfolio/cats/p1.jpg",
+          "images/portfolio/cats/p3.jpg",
+          "images/portfolio/cats/p2.jpg"
         ],
-        "url": "https://github.com",
+        "url": "https://www.instagram.com/nerdy_cyclist/",
         "technologies": [
-          {
-            "class": "devicon-angularjs-plain",
-            "name": "Angular"
-          },
-          {
-            "class": "devicon-typescript-plain",
-            "name": "TypeScript"
-          },
-          {
-            "class": "devicon-csharp-plain",
-            "name": "C#"
-          }
         ]
       }
     ],
     "experience": [
       {
-        "company": "DefOpenSource",
-        "title": "Front-End Developer",
-        "years": "10.2019 - obecnie",
+        "company": "Foundation Medicine Inc.",
+        "title": "Senior Software Engineer",
+        "years": "July 2019 - Present",
+        "mainTech": [
+          "NodeJS"
+        ],
+        "technologies": [
+          "Kafka",
+          "AWS RDS",
+          "Jenkins",
+          "AWS ECS",
+          "Docker",
+          "React",
+          "Swagger"
+        ]
+      },
+      {
+        "company": "Zea Biosciences",
+        "title": "Lead Software Developer",
+        "years": "Sep 2018 - July 2019",
+        "mainTech": [
+          "Python 3.x"
+        ],
+        "technologies": [
+          "Django",
+          "React",
+          "Sysadmin",
+          "MariaDB",
+          "Grafana"
+        ]
+      },
+      {
+        "company": "Efacto Power",
+        "title": "Senior Software Developer",
+        "years": "Jan 2017 - Aug 2018",
+        "mainTech": [
+          "Product Development"
+        ],
+        "technologies": [
+          "OpenTSDB",
+          "Hadoop",
+          "Sysadmin",
+          "Contract Manufacturing"
+        ]
+      },
+      {
+        "company": "Outsmart Power Systems",
+        "title": "Software Developer",
+        "years": "Aug 2015 - Dec 2016",
         "mainTech": [
           "Angular 8/9/10"
         ],
         "technologies": [
-          "REST API",
-          "RxJS",
-          "JavaScript",
+          "Java 8",
+          "Javascript",
+          "D3 Charts",
           "Bootstrap",
-          "MDBootstrap",
-          "EF Core",
-          "Angular Material"
-        ]
-      },
-      {
-        "company": "Serros Solutions",
-        "title": "Stażystka",
-        "years": "01.2018 - 09.2019",
-        "mainTech": [
-          "Angular 7/8"
-        ],
-        "technologies": [
-          "REST API",
-          "RxJS",
-          "Swagger",
-          "JavaScript",
-          "DHTMLX Gantt"
+          "Websocket"
         ]
       }
     ]
